@@ -40,7 +40,6 @@ class DataIngestion:
 if __name__ =="__main__":
     obj = DataIngestion()
     data_path=obj.initiate_data_ingestion()
-    print(data_path)
     data_transformation = DataTransformation()
     train_array = data_transformation.initiate_data_transformation(data_path)
     modeltrainer = ModelTrainer()
